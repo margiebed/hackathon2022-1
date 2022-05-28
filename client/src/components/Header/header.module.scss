@@ -1,0 +1,9 @@
+@import 'style/variables';
+
+.header {
+  height: $h-header;
+  background-color: $c-header-bg;
+  color: $c-black;
+  text-align: center;
+  padding-top: 10px;
+}

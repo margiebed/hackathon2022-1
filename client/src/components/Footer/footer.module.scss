@@ -1,0 +1,9 @@
+@import 'style/variables';
+
+.footer {
+  height: $h-footer;
+  background-color: $c-footer-bg;
+  color: $c-white;
+  text-align: center;
+  padding-top: 10px;
+}
