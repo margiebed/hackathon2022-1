@@ -13,9 +13,6 @@ i18n
     interpolation: {
       escapeValue: false,
     },
-    backend: {
-      loadPath: 'hackathon2022/locales/{{lng}}/{{ns}}.json',
-    },
   });
 
 export default i18n;
