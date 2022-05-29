@@ -9,7 +9,8 @@
     "eject": "react-scripts eject",
     "clean": "rimraf ./node_modules",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "serve": "serve -s build"
   },
   "eslintConfig": {
     "extends": [
@@ -57,6 +58,7 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "serve": "^13.0.2"
   }
 }
