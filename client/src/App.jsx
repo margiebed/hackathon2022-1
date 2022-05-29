@@ -1,20 +1,20 @@
-import { Link, Route, Routes } from 'react-router-dom';
+import { Suspense } from 'react';
+import { Route, Routes } from 'react-router-dom';
 
-import { Footer, Header } from 'components';
-import { AboutPage, HomePage } from 'pages';
+import { Footer, Header, Loader } from 'components';
+import { AboutPage, HomePage, NotFoundPage } from 'pages';
 
 export const App = () => {
   return (
     <>
       <Header />
-      <main>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+      <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
-      </main>
+      </Suspense>
       <Footer />
     </>
   );

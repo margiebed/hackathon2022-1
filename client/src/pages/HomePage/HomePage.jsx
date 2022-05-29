@@ -3,8 +3,8 @@ import { Counter } from 'components';
 
 export const HomePage = () => {
   return (
-    <section className={styles.home}>
+    <main className={styles.home}>
       <Counter />
-    </section>
+    </main>
   );
 };

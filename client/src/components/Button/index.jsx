@@ -3,11 +3,11 @@ import clsx from 'clsx';
 
 import styles from './button.module.scss';
 
-export const Button = ({ children, className, value, secondary, ...rest }) => {
+export const Button = ({ children, className, secondary, ...rest }) => {
   const buttonStyle = clsx(styles.button, className, { [styles.secondary]: secondary });
 
   return (
-    <button className={buttonStyle} value={value} {...rest}>
+    <button className={buttonStyle} {...rest}>
       {children}
     </button>
   );
