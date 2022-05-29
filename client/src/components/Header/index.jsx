@@ -1,5 +1,11 @@
 import styles from './header.module.scss';
+import { Navbar } from 'components';
 
 export const Header = () => {
-  return <section className={styles.header}>Header</section>;
+  return (
+    <header className={styles.header}>
+      <div className={styles.background}>&nbsp;</div>
+      <Navbar />
+    </header>
+  );
 };

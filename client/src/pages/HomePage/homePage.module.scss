@@ -1,4 +1,4 @@
-@import 'style/variables';
+@import 'style/global';
 
 .home {
   background-color: $c-background;
@@ -6,4 +6,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }

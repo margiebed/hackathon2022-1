@@ -1,9 +1,14 @@
-@import 'style/variables';
+@import 'style/global';
 
 .header {
-  height: $h-header;
-  background-color: $c-header-bg;
+  position: relative;
+  min-height: $h-header;
   color: $c-black;
-  text-align: center;
-  padding-top: 10px;
+}
+
+.background {
+  position: absolute;
+  height: $h-header;
+  width: 100vw;
+  background-color: $c-header-bg;
 }

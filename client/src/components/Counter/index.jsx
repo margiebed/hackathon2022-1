@@ -12,7 +12,7 @@ export const Counter = () => {
 
   const onIncrement = () => dispatch(increment());
   const onDecrement = () => dispatch(decrement());
-  const handleChange = ({ target: { value } }) => (+value || !value.length) && setCounterValue(value);
+  const handleChange = ({ target: { value } }) => setCounterValue(value);
   const onAdd = () => +counterValue && dispatch(incrementByAmount(+counterValue));
 
   return (
@@ -25,7 +25,7 @@ export const Counter = () => {
         <Button onClick={onIncrement}>+</Button>
       </div>
       <div>
-        <input type="text" placeholder="value" value={counterValue} onChange={handleChange} />
+        <input type="number" placeholder="value" value={counterValue} onChange={handleChange} />
         <Button onClick={onAdd}>Add</Button>
       </div>
     </article>
