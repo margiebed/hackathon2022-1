@@ -44,6 +44,11 @@ body {
   flex-direction: column;
 }
 
+a {
+  color: $c-text;
+  text-decoration: none;
+}
+
 main {
   flex: 1;
 }

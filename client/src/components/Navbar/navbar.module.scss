@@ -55,15 +55,18 @@
       display: block;
       text-align: center;
       text-transform: capitalize;
-      text-decoration: none;
       letter-spacing: 1rem;
-      color: $c-text;
+      list-style-type: none;
       transition: 0.3s ease-in-out;
 
       @include respond(tab-port) {
         width: 100%;
         padding: 3rem 0;
         border-bottom: 1px solid $c-text;
+
+        &:last-child {
+          margin-bottom: 2rem;
+        }
       }
     }
 
