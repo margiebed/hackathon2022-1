@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.319bc318.css",
-    "main.js": "/static/js/main.59d7883c.js",
-    "index.html": "/index.html",
-    "static/media/getFetch.cjs": "/static/media/getFetch.c780682470504fffbd04.cjs",
-    "static/media/menu.svg": "/static/media/menu.644fa295fdd5f662e642ba6bfb084239.svg",
-    "main.319bc318.css.map": "/static/css/main.319bc318.css.map",
-    "main.59d7883c.js.map": "/static/js/main.59d7883c.js.map"
+    "main.css": "/hackathon2022/static/css/main.319bc318.css",
+    "main.js": "/hackathon2022/static/js/main.6c56554a.js",
+    "index.html": "/hackathon2022/index.html",
+    "static/media/getFetch.cjs": "/hackathon2022/static/media/getFetch.c780682470504fffbd04.cjs",
+    "static/media/menu.svg": "/hackathon2022/static/media/menu.644fa295fdd5f662e642ba6bfb084239.svg",
+    "main.319bc318.css.map": "/hackathon2022/static/css/main.319bc318.css.map",
+    "main.6c56554a.js.map": "/hackathon2022/static/js/main.6c56554a.js.map"
   },
   "entrypoints": [
     "static/css/main.319bc318.css",
-    "static/js/main.59d7883c.js"
+    "static/js/main.6c56554a.js"
   ]
 }
