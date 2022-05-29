@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-=======
->>>>>>> main
 import { useDispatch, useSelector } from 'react-redux';
 
 import styles from './counter.module.scss';
