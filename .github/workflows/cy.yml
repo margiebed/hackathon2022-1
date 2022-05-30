@@ -15,6 +15,11 @@ on:
     branches:
       - main
 
+# Select subdirectory
+defaults:
+  run:
+    working-directory: client
+
 # A job is a set of steps that execute on the same runner.
 # The jobs can be run in parallel or sequentially and can
 # have many steps.
@@ -47,10 +52,8 @@ jobs:
         # Run the lint custom NPM command that triggers the
         # ESLint linter check
         run: npm run lint
-        working-directory: ./client
 
       - name: Run Prettier
         # Run the format:check custom NPM command
         # that runs prettier to check code format
         run: npm run format:check
-        working-directory: ./client
