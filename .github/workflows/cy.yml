@@ -47,10 +47,10 @@ jobs:
         # Run the lint custom NPM command that triggers the
         # ESLint linter check
         working-directory: ./client
-        run: npx eslint --color ./src
+        run: yarn run lint
 
       - name: Run Prettier
         # Run the format:check custom NPM command
         # that runs prettier to check code format
         working-directory: ./client
-        run: npx prettier --check ./src
+        run: yarn run format:check
