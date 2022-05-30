@@ -42,7 +42,6 @@ jobs:
         # `something-else/` = third party
         # This is a GH ready-to-use action
         uses: actions/checkout@v2
-        working-directory: ./client
 
       - name: Run ESLint
         # Run the lint custom NPM command that triggers the
