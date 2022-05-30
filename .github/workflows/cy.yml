@@ -43,9 +43,6 @@ jobs:
         # This is a GH ready-to-use action
         uses: actions/checkout@v2
 
-      - name: Install modules
-        run: yarn
-
       - name: Install client modules
         working-directory: ./client
         run: yarn
@@ -54,10 +51,10 @@ jobs:
         # Run the lint custom NPM command that triggers the
         # ESLint linter check
         working-directory: ./client
-        run: yarn run lint
+        run: yarn lint
 
       - name: Run Prettier
         # Run the format:check custom NPM command
         # that runs prettier to check code format
         working-directory: ./client
-        run: yarn run format:check
+        run: yarn format:check
