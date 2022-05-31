@@ -1,0 +1,13 @@
+@import 'style/global';
+
+.input {
+  border: 1px solid $c-silver;
+  outline: none;
+  font-size: 2rem;
+  width: 400px;
+  height: 50px;
+  padding-left: 10px;
+  margin: 10px;
+  display: block;
+  color: gray;
+}
