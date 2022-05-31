@@ -4,16 +4,42 @@
   @include page-base;
 
   display: flex;
+  overflow-x: hidden;
+  flex-direction: row-reverse;
 
-  @include respond(tab-port) {
-    flex-direction: column;
+  .left {
+    display: flex;
+    position: relative;
+    transition: 0.3s ease;
+
+    .btn {
+      position: absolute;
+      right: 0;
+      transform: translate(120%, 50%);
+      display: none;
+
+      @include respond(tab-port) {
+        display: block;
+      }
+    }
+  }
+
+  .hide {
+    transform: translateX(99%);
   }
 
   .content {
     padding: 4rem;
+    flex: 1 0 100%;
+    transform: translateX(0%);
+    transition: 0.3s ease;
+  }
+
+  .rightMove {
+    transform: translateX(25%);
 
     @include respond(tab-port) {
-      // flex: 1 0 100%;
+      transform: translateX(66%);
     }
   }
 }

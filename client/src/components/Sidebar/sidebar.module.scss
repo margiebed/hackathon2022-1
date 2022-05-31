@@ -11,6 +11,10 @@
   font-size: 2.2rem;
   padding-bottom: 2rem;
 
+  @include respond(tab-port) {
+    width: 66vw;
+  }
+
   a {
     color: $c-text-w;
   }
