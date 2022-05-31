@@ -1,0 +1,19 @@
+@import 'style/global';
+
+.survey {
+  @include page-base;
+
+  display: flex;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+
+  .content {
+    padding: 4rem;
+
+    @include respond(tab-port) {
+      // flex: 1 0 100%;
+    }
+  }
+}
