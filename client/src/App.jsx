@@ -1,8 +1,9 @@
 import { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import { Footer, Header, Loader } from 'components';
-import { AboutPage, HomePage, NotFoundPage } from 'pages';
+import { paths } from 'constants/paths';
+import { Header, Loader } from 'components';
+import { AboutPage, HomePage, NotFoundPage, SurveyPage } from 'pages';
 
 export const App = () => {
   return (
@@ -10,12 +11,12 @@ export const App = () => {
       <Header />
       <Suspense fallback={<Loader />}>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path={paths.home} element={<HomePage />} />
+          <Route path={paths.about} element={<AboutPage />} />
+          <Route path={paths.survey} element={<SurveyPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
-      <Footer />
     </>
   );
 };
