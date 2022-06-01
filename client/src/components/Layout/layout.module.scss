@@ -1,6 +1,6 @@
 @import 'style/global';
 
-.survey {
+.layout {
   @include page-base;
   display: flex;
 
@@ -17,6 +17,7 @@
 
       @include respond(tab-port) {
         flex: 1 0 100%;
+        padding-top: 2rem;
       }
 
       .content {

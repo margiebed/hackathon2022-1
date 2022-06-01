@@ -3,7 +3,7 @@
 .sidebar {
   background-color: $c-sidebar;
   color: $c-text-w;
-  width: min(33vw, 40rem);
+  width: min($w-sidebar, 40rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,7 +12,7 @@
   padding-bottom: 2rem;
 
   @include respond(tab-port) {
-    width: 66vw;
+    flex: 1 0 $w-sidebar-tab;
   }
 
   a {
