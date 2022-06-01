@@ -2,8 +2,14 @@
 
 .footer {
   height: $h-footer;
-  background-color: $c-footer-bg;
-  color: $c-white;
+  color: $c-text-w;
   text-align: center;
   padding-top: 1rem;
+  width: 100%;
+  padding: 1rem 0;
+
+  .text {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
 }

@@ -32,7 +32,7 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: $c-text;
+  color: $c-text-b;
   box-sizing: border-box;
   font-size: $default-font-size;
   overflow-x: hidden;
@@ -42,10 +42,11 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  white-space: pre-line;
 }
 
 a {
-  color: $c-text;
+  color: $c-text-b;
   text-decoration: none;
 }
 
