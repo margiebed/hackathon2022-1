@@ -3,17 +3,12 @@ import clsx from 'clsx';
 
 import styles from './input.module.scss';
 
-export const Input = ({ placeholder, className, type, value, setValue }) => {
+export const Input = ({ className, ...rest }) => {
   const inputStyle = clsx(styles.input, className);
-  const handleChange = ({ target: { value } }) => setValue && setValue(value);
 
-  return <input placeholder={placeholder} className={inputStyle} type={type} value={value} onChange={handleChange} />;
+  return <input className={inputStyle} {...rest} />;
 };
 
 Input.PropTypes = {
-  placeholder: PropTypes.string,
   className: PropTypes.string,
-  type: PropTypes.string,
-  value: PropTypes.string,
-  onChange: PropTypes.func,
 };
