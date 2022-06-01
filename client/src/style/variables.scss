@@ -6,13 +6,20 @@ $c-black: #000;
 $c-text-b: #111;
 $c-text-w: #d9d9d9;
 
-$c-background: #efefef;
+$c-background: #fff;
+$c-background-grey: #efefef;
+
 $c-header-bg: rgb(235, 211, 0);
 $c-footer-bg: #666;
 $c-button: mediumseagreen;
 $c-button-secondary: tomato;
 
-$c-sidebar: #11557a;
+$c-green: #7dc82c;
+$c-darkblue: #11557a;
+$c-silver: #d9d9d9;
+$c-turkus: #10828d;
+
+$c-sidebar: $c-darkblue;
 
 // FONT
 //==========================================================================
