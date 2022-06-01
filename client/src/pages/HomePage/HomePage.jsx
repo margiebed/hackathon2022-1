@@ -5,7 +5,7 @@ export const HomePage = () => {
   return (
     <main className={styles.home}>
       <Counter />
-      <Input type="mail" placeholder="Tu wpisz link"/>
+      <Input type="mail" placeholder="Tu wpisz link" />
     </main>
   );
 };
